@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Student login for Fieldnote Learning Centre classes, attendance, materials, and feedback."
+    />
+    <title>Student Login | Fieldnote Learning Centre</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/dark-mode.css" />
+    <link rel="stylesheet" href="../assets/css/rtl.css" />
+  </head>
+  <body class="auth-page">
+    <main id="main-content" class="auth-shell">
+      <section class="auth-panel">
+        <div class="auth-form-card">
+          <a class="brand" href="index.html" aria-label="Fieldnote Learning Centre home">
+            <img class="brand-mark" src="../assets/images/favicon.svg" alt="" />
+            <span class="brand-text">
+              Fieldnote
+              <span>Learning Centre</span>
+            </span>
+          </a>
+          <h1>Welcome back.</h1>
+          <p>Sign in to view your classes, attendance, study materials, and faculty feedback.</p>
+          <form class="form-grid" data-login-form novalidate>
+            <div class="field">
+              <label for="login-id">Email or Student ID</label>
+              <input
+                id="login-id"
+                name="student-id"
+                placeholder="Enter email or student ID"
+                autocomplete="username"
+                required
+              />
+              <span class="field-error" data-error-for="login-id"></span>
+            </div>
+            <div class="field">
+              <label for="login-password">Password</label>
+              <div class="password-wrap">
+                <input
+                  id="login-password"
+                  name="password"
+                  type="password"
+                  placeholder="Enter password"
+                  autocomplete="current-password"
+                  required
+                />
+                <button class="password-toggle" type="button" data-password-toggle>Show</button>
+              </div>
+              <span class="field-error" data-error-for="login-password"></span>
+            </div>
+            <div class="auth-options">
+              <label class="check-control">
+                <input type="checkbox" name="remember" />
+                <span>Remember me</span>
+              </label>
+              <button
+                class="text-link auth-inline-action"
+                type="button"
+                data-toast-action="Contact the centre to reset your portal password."
+              >
+                Forgot Password?
+              </button>
+            </div>
+            <button class="btn" type="submit">
+              Sign In
+              <span aria-hidden="true">→</span>
+            </button>
+          </form>
+          <p class="auth-switch">
+            New here?
+            <a class="text-link" href="register.html">Create Account</a>
+          </p>
+          <a class="text-link auth-home" href="index.html">← Home</a>
+        </div>
+      </section>
+    </main>
+    <div class="toast" role="status" aria-live="polite" data-toast></div>
+    <script src="../assets/js/main.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Upcoming student tests, past results, and faculty feedback." />
+    <title>Tests & Results | Fieldnote Learning Centre</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/dark-mode.css" />
+    <link rel="stylesheet" href="../assets/css/rtl.css" />
+  </head>
+  <body class="dashboard-body">
+    <div class="dashboard-shell" data-dashboard-shell>
+      <main id="main-content" class="dashboard-main">
+        <div class="dashboard-main-inner">
+          <div class="dashboard-title">
+            <div>
+              <p class="eyebrow">Student Portal</p>
+              <h1>Tests & Results</h1>
+              <p>Prepare for what is next and learn from what is finished.</p>
+            </div>
+          </div>
+          <section>
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Upcoming Tests</p>
+                <h2>Next on the calendar.</h2>
+              </div>
+            </div>
+            <div class="card-grid">
+              <article class="test-card reveal">
+                <span class="badge">Science</span>
+                <h3>Electricity Unit Check</h3>
+                <p><strong>4 Sep · 4:30 PM</strong></p>
+                <p>Circuits, resistance, power, and numerical application.</p>
+                <button class="btn btn-secondary" type="button" data-toast-action="Test reminder set locally.">
+                  Set reminder
+                </button>
+              </article>
+              <article class="test-card reveal">
+                <span class="badge">Mathematics</span>
+                <h3>Quadratics Skill Check</h3>
+                <p><strong>9 Sep · 5:00 PM</strong></p>
+                <p>Factorisation, roots, graphs, and word problems.</p>
+                <button class="btn btn-secondary" type="button" data-toast-action="Test reminder set locally.">
+                  Set reminder
+                </button>
+              </article>
+              <article class="test-card reveal">
+                <span class="badge">English</span>
+                <h3>Literature Response</h3>
+                <p><strong>12 Sep · 10:30 AM</strong></p>
+                <p>Evidence selection, paragraph structure, and editing.</p>
+                <button class="btn btn-secondary" type="button" data-toast-action="Test reminder set locally.">
+                  Set reminder
+                </button>
+              </article>
+            </div>
+          </section>
+          <section class="section" style="padding-bottom: 0">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Past Results</p>
+                <h2>Scores with faculty feedback.</h2>
+              </div>
+            </div>
+            <div class="table-wrap reveal">
+              <table class="matrix-table responsive">
+                <thead>
+                  <tr>
+                    <th>Subject</th>
+                    <th>Score</th>
+                    <th>Maximum</th>
+                    <th>Percentage</th>
+                    <th>Faculty feedback</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Subject"><strong>Mathematics</strong></td>
+                    <td data-label="Score">38</td>
+                    <td data-label="Maximum">50</td>
+                    <td data-label="Percentage">76%</td>
+                    <td data-label="Faculty feedback">Methods are secure; slow down when expanding signs.</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Subject"><strong>Science</strong></td>
+                    <td data-label="Score">32</td>
+                    <td data-label="Maximum">40</td>
+                    <td data-label="Percentage">80%</td>
+                    <td data-label="Faculty feedback">Strong diagrams; include units in every calculation.</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Subject"><strong>English</strong></td>
+                    <td data-label="Score">27</td>
+                    <td data-label="Maximum">35</td>
+                    <td data-label="Percentage">77%</td>
+                    <td data-label="Faculty feedback">Evidence is relevant; make the explanation more specific.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <div class="toast" role="status" aria-live="polite" data-toast></div>
+    <script src="../assets/js/dashboard.js" defer></script>
+    <script src="../assets/js/main.js" defer></script>
+  </body>
+</html>

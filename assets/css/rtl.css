@@ -1,0 +1,52 @@
+html[dir="rtl"] body {
+  direction: rtl;
+}
+
+html[dir="rtl"] .path-step {
+  padding: 1.2rem 4.25rem 1.2rem 1.2rem;
+}
+
+html[dir="rtl"] .chart-bar::after,
+html[dir="rtl"] .toast {
+  transform: translateX(50%);
+}
+
+html[dir="rtl"] .toast.is-visible {
+  transform: translate(50%, 0);
+}
+
+html[dir="rtl"] .dropdown-menu {
+  text-align: start;
+}
+
+html[dir="rtl"] .btn::before,
+html[dir="rtl"] .btn-link::after {
+  transform-origin: right;
+}
+
+html[dir="rtl"] .btn:hover > span,
+html[dir="rtl"] .btn-link:hover span {
+  transform: translateX(-4px);
+}
+
+@media (min-width: 768px) {
+  html[dir="rtl"] .path-step {
+    padding: 4.1rem 1.2rem 1rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  html[dir="rtl"] .dropdown-arrow {
+    transform: rotate(-45deg);
+  }
+
+  html[dir="rtl"] .nav-dropdown:hover .dropdown-arrow,
+  html[dir="rtl"] .nav-dropdown:focus-within .dropdown-arrow,
+  html[dir="rtl"] .nav-dropdown.is-open .dropdown-arrow {
+    transform: rotate(-225deg);
+  }
+
+  html[dir="rtl"] .journey-map {
+    margin-inline: 0;
+  }
+}

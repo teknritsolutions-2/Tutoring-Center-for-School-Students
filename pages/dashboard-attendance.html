@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Month-wise student attendance and class records." />
+    <title>Attendance | Fieldnote Learning Centre</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/dark-mode.css" />
+    <link rel="stylesheet" href="../assets/css/rtl.css" />
+  </head>
+  <body class="dashboard-body">
+    <div class="dashboard-shell" data-dashboard-shell>
+      <main id="main-content" class="dashboard-main">
+        <div class="dashboard-main-inner">
+          <div class="dashboard-title">
+            <div>
+              <p class="eyebrow">Student Portal</p>
+              <h1>Attendance</h1>
+              <p>Month-wise presence across all active subjects.</p>
+            </div>
+            <div class="field" style="min-width: 180px">
+              <label for="attendance-month">Month</label>
+              <select id="attendance-month" data-month-select>
+                <option>September</option>
+                <option>August</option>
+                <option>October</option>
+              </select>
+            </div>
+          </div>
+          <div class="dash-grid">
+            <article class="dash-card reveal">
+              <h2>Attendance %</h2>
+              <div class="attendance-ring" data-attendance-ring data-label="92%" style="--attendance: 92%"></div>
+            </article>
+            <article class="dash-card reveal">
+              <h2>Present</h2>
+              <span class="metric" data-present-count>23</span>
+              <p>sessions attended</p>
+            </article>
+            <article class="dash-card reveal">
+              <h2>Absent</h2>
+              <span class="metric" data-absent-count>2</span>
+              <p>sessions missed</p>
+            </article>
+            <article class="dash-card span-2 reveal">
+              <h2>Present dates</h2>
+              <div class="date-chips">
+                <span class="date-chip">01</span>
+                <span class="date-chip">02</span>
+                <span class="date-chip">04</span>
+                <span class="date-chip">05</span>
+                <span class="date-chip">08</span>
+                <span class="date-chip">09</span>
+                <span class="date-chip">11</span>
+                <span class="date-chip">12</span>
+                <span class="date-chip">15</span>
+                <span class="date-chip">16</span>
+                <span class="date-chip">18</span>
+                <span class="date-chip">19</span>
+                <span class="date-chip">22</span>
+                <span class="date-chip">23</span>
+                <span class="date-chip">25</span>
+                <span class="date-chip">26</span>
+                <span class="date-chip">29</span>
+              </div>
+            </article>
+            <article class="dash-card reveal">
+              <h2>Absent dates</h2>
+              <div class="date-chips">
+                <span class="date-chip absent">03</span>
+                <span class="date-chip absent">17</span>
+              </div>
+              <p style="margin-top: 1rem">Materials are available for both missed sessions.</p>
+            </article>
+          </div>
+          <section class="section" style="padding-bottom: 0">
+            <div class="dash-card">
+              <h2>Attendance note</h2>
+              <p>
+                Your current attendance is above the centre’s 85% guidance level. Consistent attendance keeps the
+                class-practice-feedback loop connected.
+              </p>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <div class="toast" role="status" aria-live="polite" data-toast></div>
+    <script src="../assets/js/dashboard.js" defer></script>
+    <script src="../assets/js/main.js" defer></script>
+  </body>
+</html>

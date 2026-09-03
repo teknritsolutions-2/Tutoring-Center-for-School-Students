@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Student profile details, communication preferences, and display settings." />
+    <title>Profile & Settings | Fieldnote Learning Centre</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/dark-mode.css" />
+    <link rel="stylesheet" href="../assets/css/rtl.css" />
+  </head>
+  <body class="dashboard-body">
+    <div class="dashboard-shell" data-dashboard-shell>
+      <main id="main-content" class="dashboard-main">
+        <div class="dashboard-main-inner">
+          <div class="dashboard-title">
+            <div>
+              <p class="eyebrow">Student Portal</p>
+              <h1>Profile & Settings</h1>
+              <p>Review student details and communication preferences.</p>
+            </div>
+          </div>
+          <div class="legal-grid">
+            <form class="form-card reveal" data-profile-form>
+              <p class="eyebrow">Student profile</p>
+              <h2>Basic details</h2>
+              <div class="form-grid two-col">
+                <div class="field">
+                  <label for="profile-name">Student name</label>
+                  <input id="profile-name" value="Aarav Shah" />
+                </div>
+                <div class="field">
+                  <label for="profile-grade">Grade</label>
+                  <select id="profile-grade">
+                    <option selected>Grade 10</option>
+                    <option>Grade 9</option>
+                    <option>Grade 11</option>
+                  </select>
+                </div>
+                <div class="field full">
+                  <label for="profile-email">Contact email</label>
+                  <input id="profile-email" type="email" value="parent@example.com" />
+                </div>
+                <div class="field">
+                  <label for="profile-phone">Contact phone</label>
+                  <input id="profile-phone" value="+91 90000 00000" />
+                </div>
+                <div class="field">
+                  <label for="profile-language">Preferred language</label>
+                  <select id="profile-language">
+                    <option selected>English</option>
+                    <option>Hindi</option>
+                    <option>Kannada</option>
+                  </select>
+                </div>
+                <div class="full"><button class="btn" type="submit">Save profile</button></div>
+              </div>
+            </form>
+            <aside class="info-card reveal">
+              <p class="eyebrow">Account notes</p>
+              <h2>Profile and privacy</h2>
+              <div class="dash-list">
+                <div class="dash-list-item">
+                  <strong>Enrolled grade</strong>
+                  <span>Grade 10 · Mathematics, Science, English</span>
+                </div>
+                <div class="dash-list-item">
+                  <strong>Progress updates</strong>
+                  <span>Monthly summary to the contact email above</span>
+                </div>
+                <div class="dash-list-item">
+                  <strong>Display settings</strong>
+                  <span>Use the sidebar on desktop or the menu on tablet and mobile</span>
+                </div>
+              </div>
+              <h3>Privacy</h3>
+              <p>
+                Review contact details carefully and use the privacy page to understand how account information and
+                preferences are handled.
+              </p>
+              <a class="text-link" href="privacy.html">Read privacy details</a>
+            </aside>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="toast" role="status" aria-live="polite" data-toast></div>
+    <script src="../assets/js/dashboard.js" defer></script>
+    <script src="../assets/js/main.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Student timetable for classes, subjects, tutors, and weekly sessions." />
+    <title>My Timetable | Fieldnote Learning Centre</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/dark-mode.css" />
+    <link rel="stylesheet" href="../assets/css/rtl.css" />
+  </head>
+  <body class="dashboard-body">
+    <div class="dashboard-shell" data-dashboard-shell>
+      <main id="main-content" class="dashboard-main">
+        <div class="dashboard-main-inner">
+          <div class="dashboard-title">
+            <div>
+              <p class="eyebrow">Student Portal</p>
+              <h1>My Timetable</h1>
+              <p>A clear view of subject, day, time, batch, and tutor.</p>
+            </div>
+            <button class="btn btn-secondary" type="button" data-toast-action="Timetable saved for printing.">
+              Print timetable
+            </button>
+          </div>
+          <section class="dash-card span-full reveal">
+            <h2>Weekly Schedule</h2>
+            <div class="table-wrap">
+              <table class="matrix-table responsive">
+                <thead>
+                  <tr>
+                    <th>Subject</th>
+                    <th>Day</th>
+                    <th>Time</th>
+                    <th>Batch</th>
+                    <th>Tutor</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Subject"><strong>Mathematics</strong></td>
+                    <td data-label="Day">Monday</td>
+                    <td data-label="Time">5:00–6:15 PM</td>
+                    <td data-label="Batch">M10-B</td>
+                    <td data-label="Tutor">Meera Iyer</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Subject"><strong>Science</strong></td>
+                    <td data-label="Day">Tuesday</td>
+                    <td data-label="Time">5:00–6:15 PM</td>
+                    <td data-label="Batch">S10-A</td>
+                    <td data-label="Tutor">Arjun Menon</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Subject"><strong>Mathematics</strong></td>
+                    <td data-label="Day">Wednesday</td>
+                    <td data-label="Time">5:00–6:15 PM</td>
+                    <td data-label="Batch">M10-B</td>
+                    <td data-label="Tutor">Meera Iyer</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Subject"><strong>English</strong></td>
+                    <td data-label="Day">Thursday</td>
+                    <td data-label="Time">6:30–7:30 PM</td>
+                    <td data-label="Batch">E10-C</td>
+                    <td data-label="Tutor">Arjun Menon</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Subject"><strong>Mathematics</strong></td>
+                    <td data-label="Day">Friday</td>
+                    <td data-label="Time">5:00–6:15 PM</td>
+                    <td data-label="Batch">M10-B</td>
+                    <td data-label="Tutor">Meera Iyer</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Subject"><strong>Science</strong></td>
+                    <td data-label="Day">Saturday</td>
+                    <td data-label="Time">10:00–11:15 AM</td>
+                    <td data-label="Batch">S10-A</td>
+                    <td data-label="Tutor">Arjun Menon</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <section class="section" style="padding-bottom: 0">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Weekly rhythm</p>
+                <h2>Prepare before the class.</h2>
+              </div>
+            </div>
+            <div class="dash-grid">
+              <article class="dash-card">
+                <h2>Monday</h2>
+                <p>Review last week’s error log before Mathematics.</p>
+              </article>
+              <article class="dash-card">
+                <h2>Thursday</h2>
+                <p>Bring the literature response outline to English.</p>
+              </article>
+              <article class="dash-card">
+                <h2>Saturday</h2>
+                <p>Upload questions from the circuits revision sheet.</p>
+              </article>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <div class="toast" role="status" aria-live="polite" data-toast></div>
+    <script src="../assets/js/dashboard.js" defer></script>
+    <script src="../assets/js/main.js" defer></script>
+  </body>
+</html>

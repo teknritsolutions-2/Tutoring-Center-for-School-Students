@@ -1,0 +1,122 @@
+html[data-theme="dark"] {
+  --primary: #6fd0b6;
+  --primary-hover: #8bdcc6;
+  --primary-active: #a9e4d3;
+  --primary-strong: #a9e4d3;
+  --primary-soft: #1b352f;
+  --primary-soft-2: #111a17;
+  --background: #0d1210;
+  --surface: #141b18;
+  --surface-alt: #1a2420;
+  --text-primary: #f6f9f8;
+  --text-secondary: #c2cbc8;
+  --text-muted: #919c98;
+  --border: #2d3935;
+  --border-strong: #42514c;
+  --success: #8bdcc6;
+  --danger: #ffadb7;
+  --shadow: 0 24px 70px rgba(0, 0, 0, 0.34);
+  --shadow-soft: 0 14px 38px rgba(0, 0, 0, 0.24);
+  color-scheme: dark;
+}
+
+html[data-theme="dark"] .dark-band,
+html[data-theme="dark"] .site-footer,
+html[data-theme="dark"] .dashboard-sidebar {
+  background: #07100d;
+}
+
+html[data-theme="dark"] .learning-stage {
+  background:
+    radial-gradient(ellipse at 18% 25%, rgba(20, 106, 88, 0.3), transparent 48%),
+    radial-gradient(ellipse at 80% 16%, rgba(33, 155, 128, 0.18), transparent 48%),
+    radial-gradient(ellipse at 54% 74%, rgba(8, 47, 41, 0.36), transparent 52%), var(--surface);
+}
+
+html[data-theme="dark"] .journey-hero {
+  background:
+    radial-gradient(ellipse at 12% 20%, rgba(20, 106, 88, 0.28), transparent 46%),
+    radial-gradient(ellipse at 82% 28%, rgba(33, 155, 128, 0.14), transparent 42%), var(--background);
+}
+
+html[data-theme="dark"] .proof-lead,
+html[data-theme="dark"] .cta-panel {
+  background: var(--brand-900);
+}
+
+html[data-theme="dark"] .next-class {
+  border-color: color-mix(in srgb, var(--primary) 42%, var(--border));
+  background: var(--surface-alt);
+  color: var(--text-primary);
+}
+
+html[data-theme="dark"] .btn {
+  color: #082f29;
+}
+
+html[data-theme="dark"] .btn-secondary {
+  color: var(--text-primary);
+}
+
+html[data-theme="dark"] .btn-secondary:hover,
+html[data-theme="dark"] .dropdown-menu a:hover,
+html[data-theme="dark"] .drawer-nav a:hover,
+html[data-theme="dark"] .drawer-nav a[aria-current="page"] {
+  background: var(--primary-soft);
+  color: var(--primary-strong);
+}
+
+html[data-theme="dark"] .btn-light {
+  background: #f6f9f8;
+  color: var(--brand-900);
+}
+
+html[data-theme="dark"] .btn-light::before {
+  background: var(--brand-100);
+}
+
+html[data-theme="dark"] .btn-outline-light {
+  color: #f6f9f8;
+}
+
+html[data-theme="dark"] .segmented button.is-active {
+  color: #082f29;
+}
+
+html[data-theme="dark"] .tutor-photo,
+html[data-theme="dark"] .tutor-feature-photo,
+html[data-theme="dark"] .spotlight-image,
+html[data-theme="dark"] .feedback-photo,
+html[data-theme="dark"] .journey-photo,
+html[data-theme="dark"] .course-media {
+  background-color: var(--surface-alt);
+}
+
+html[data-theme="dark"] .auth-page {
+  background:
+    radial-gradient(ellipse at 16% 18%, rgba(20, 106, 88, 0.3), transparent 40%),
+    radial-gradient(ellipse at 84% 22%, rgba(33, 155, 128, 0.16), transparent 42%),
+    radial-gradient(ellipse at 55% 88%, rgba(8, 47, 41, 0.36), transparent 45%), var(--background);
+}
+
+html[data-theme="dark"] .date-chip.absent {
+  border-color: #7d3c47;
+  background: #321d24;
+  color: #ffadb7;
+}
+
+html[data-theme="dark"] .map-frame {
+  filter: saturate(0.66) brightness(0.82);
+}
+
+html[data-theme="dark"] .toast {
+  border-color: var(--border);
+  background: var(--surface-alt);
+  color: var(--text-primary);
+}
+
+/* Theme-Aware Section Adjacency Spacing in Dark Mode */
+html[data-theme="dark"] .section.surface:has(+ .section.soft-surface),
+html[data-theme="dark"] .section.soft-surface:has(+ .section.surface) {
+  padding-block-end: 0;
+}
