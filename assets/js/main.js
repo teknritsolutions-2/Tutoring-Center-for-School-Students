@@ -344,8 +344,9 @@
       viewport.className = "carousel-viewport";
 
       const track = document.createElement("div");
-      const cols = items.length >= 4 ? 4 : 3;
-      track.className = `carousel-track ${grid.className} ${cols === 4 ? "cols-4" : ""}`.trim();
+      const isFourCol = grid.classList.contains("four");
+      const cols = isFourCol ? 4 : 3;
+      track.className = `carousel-track ${grid.className} ${isFourCol ? "cols-4" : ""}`.trim();
       track.style.setProperty("--desktop-cols", String(cols));
 
       items.forEach((item, idx) => {

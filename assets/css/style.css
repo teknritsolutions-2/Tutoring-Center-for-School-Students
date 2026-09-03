@@ -3568,6 +3568,28 @@ html.js .reveal.is-visible {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .course-program-grid,
+  .carousel-track.course-program-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 1.5rem !important;
+  }
+
+  .course-card h3 {
+    display: block !important;
+    -webkit-line-clamp: unset !important;
+    min-height: auto !important;
+    white-space: normal !important;
+    line-height: 1.35 !important;
+    margin-block-end: 0.5rem !important;
+  }
+
+  .course-card p {
+    display: block !important;
+    -webkit-line-clamp: unset !important;
+    min-height: auto !important;
+    line-height: 1.55 !important;
+  }
+
   .card-grid.four,
   .value-grid.four,
   .fee-grid.four {
