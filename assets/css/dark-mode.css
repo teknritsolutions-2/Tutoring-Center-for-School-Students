@@ -66,11 +66,42 @@ html[data-theme="dark"] .btn-secondary {
 }
 
 html[data-theme="dark"] .btn-secondary:hover,
+html[data-theme="dark"] .btn-secondary:focus-visible,
 html[data-theme="dark"] .dropdown-menu a:hover,
+html[data-theme="dark"] .dropdown-menu a:focus-visible,
 html[data-theme="dark"] .drawer-nav a:hover,
+html[data-theme="dark"] .drawer-nav a:focus-visible,
 html[data-theme="dark"] .drawer-nav a[aria-current="page"] {
   background: var(--primary-soft);
   color: var(--primary-strong);
+}
+
+html[data-theme="dark"] .home-hero-copy .btn-secondary,
+html[data-theme="dark"] .journey-hero-content .btn-secondary {
+  border-color: rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .home-hero-copy .btn-secondary::before,
+html[data-theme="dark"] .journey-hero-content .btn-secondary::before {
+  background: #ffffff;
+}
+
+html[data-theme="dark"] .home-hero-copy .btn-secondary:hover,
+html[data-theme="dark"] .journey-hero-content .btn-secondary:hover,
+html[data-theme="dark"] .home-hero-copy .btn-secondary:focus-visible,
+html[data-theme="dark"] .journey-hero-content .btn-secondary:focus-visible {
+  border-color: #ffffff;
+  background: #ffffff;
+  color: #082f29;
+}
+
+html[data-theme="dark"] .home-hero-copy .btn-secondary:hover > span,
+html[data-theme="dark"] .journey-hero-content .btn-secondary:hover > span,
+html[data-theme="dark"] .home-hero-copy .btn-secondary:focus-visible > span,
+html[data-theme="dark"] .journey-hero-content .btn-secondary:focus-visible > span {
+  color: #082f29;
 }
 
 html[data-theme="dark"] .btn-light {
@@ -82,8 +113,46 @@ html[data-theme="dark"] .btn-light::before {
   background: var(--brand-100);
 }
 
+html[data-theme="dark"] .btn-light:hover,
+html[data-theme="dark"] .btn-light:focus-visible {
+  color: var(--brand-900);
+}
+
+html[data-theme="dark"] .btn-light:hover > span,
+html[data-theme="dark"] .btn-light:focus-visible > span {
+  color: var(--brand-900);
+}
+
 html[data-theme="dark"] .btn-outline-light {
-  color: #f6f9f8;
+  border-color: rgba(255, 255, 255, 0.6);
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .btn-outline-light:hover,
+html[data-theme="dark"] .btn-outline-light:focus-visible {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .btn-outline-light:hover > span,
+html[data-theme="dark"] .btn-outline-light:focus-visible > span {
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .carousel-btn:hover,
+html[data-theme="dark"] .carousel-btn:focus-visible {
+  background: var(--primary);
+  color: #082f29;
+  border-color: var(--primary);
+}
+
+html[data-theme="dark"] .back-top {
+  color: #082f29;
+}
+
+html[data-theme="dark"] .back-top:hover,
+html[data-theme="dark"] .back-top:focus-visible {
+  color: #082f29;
 }
 
 html[data-theme="dark"] .segmented button.is-active {

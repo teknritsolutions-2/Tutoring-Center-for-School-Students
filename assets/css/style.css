@@ -352,6 +352,21 @@ small {
   box-shadow: 0 12px 28px rgba(8, 47, 41, 0.2);
 }
 
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(8, 47, 41, 0.15);
+}
+
+.btn:disabled,
+.btn[aria-disabled="true"],
+button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  pointer-events: none;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
 .btn:hover::before {
   transform: scaleX(1);
 }
@@ -367,14 +382,19 @@ small {
 }
 
 .btn-secondary::before,
-.btn-light::before,
-.btn-outline-light::before {
+.btn-light::before {
   background: var(--primary-soft);
 }
 
-.btn-secondary:hover {
+.btn-secondary:hover,
+.btn-secondary:focus-visible {
   border-color: var(--primary);
   background: var(--primary-soft);
+  color: var(--primary-strong);
+}
+
+.btn-secondary:hover > span,
+.btn-secondary:focus-visible > span {
   color: var(--primary-strong);
 }
 
@@ -383,7 +403,13 @@ small {
   color: var(--brand-900);
 }
 
-.btn-light:hover {
+.btn-light:hover,
+.btn-light:focus-visible {
+  color: var(--brand-900);
+}
+
+.btn-light:hover > span,
+.btn-light:focus-visible > span {
   color: var(--brand-900);
 }
 
@@ -393,12 +419,19 @@ small {
   color: #ffffff;
 }
 
-.btn-outline-light:hover {
+.btn-outline-light:hover,
+.btn-outline-light:focus-visible {
   border-color: #ffffff;
+  color: #ffffff;
+}
+
+.btn-outline-light:hover > span,
+.btn-outline-light:focus-visible > span {
+  color: #ffffff;
 }
 
 .btn-outline-light::before {
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.16);
 }
 
 .btn-link {
@@ -533,6 +566,15 @@ small {
   border-radius: 10px;
   background: var(--surface);
   color: var(--text-primary);
+  transition: all 180ms ease;
+}
+
+.menu-button:hover,
+.menu-button:focus-visible,
+.drawer-close:hover,
+.drawer-close:focus-visible {
+  border-color: var(--primary);
+  color: var(--primary-strong);
 }
 
 .hamburger-lines,
@@ -865,10 +907,20 @@ html[data-theme="dark"] .theme-icon .icon-sun {
   -webkit-backdrop-filter: blur(8px);
 }
 
-.home-hero-copy .btn-secondary:hover {
+.home-hero-copy .btn-secondary::before {
+  background: #ffffff;
+}
+
+.home-hero-copy .btn-secondary:hover,
+.home-hero-copy .btn-secondary:focus-visible {
   border-color: #ffffff;
-  background: rgba(255, 255, 255, 0.18);
-  color: #ffffff;
+  background: #ffffff;
+  color: var(--brand-950);
+}
+
+.home-hero-copy .btn-secondary:hover > span,
+.home-hero-copy .btn-secondary:focus-visible > span {
+  color: var(--brand-950);
 }
 
 .hero-trust-strip {
@@ -1042,10 +1094,20 @@ html[data-theme="dark"] .theme-icon .icon-sun {
   -webkit-backdrop-filter: blur(8px);
 }
 
-.journey-hero-content .btn-secondary:hover {
+.journey-hero-content .btn-secondary::before {
+  background: #ffffff;
+}
+
+.journey-hero-content .btn-secondary:hover,
+.journey-hero-content .btn-secondary:focus-visible {
   border-color: #ffffff;
-  background: rgba(255, 255, 255, 0.18);
-  color: #ffffff;
+  background: #ffffff;
+  color: var(--brand-950);
+}
+
+.journey-hero-content .btn-secondary:hover > span,
+.journey-hero-content .btn-secondary:focus-visible > span {
+  color: var(--brand-950);
 }
 
 .journey-pathway-pills {
@@ -1725,7 +1787,8 @@ html[data-theme="dark"] .theme-icon .icon-sun {
   transition: all 180ms ease;
 }
 
-.carousel-btn:hover {
+.carousel-btn:hover,
+.carousel-btn:focus-visible {
   background: var(--primary);
   color: #ffffff;
   border-color: var(--primary);
@@ -2128,6 +2191,10 @@ html[data-theme="dark"] .theme-icon .icon-sun {
   border-radius: clamp(20px, 2.6vw, 30px);
   background: var(--brand-900);
   box-shadow: var(--shadow-soft);
+}
+
+.about-banner {
+  min-height: clamp(360px, 32vw, 440px);
 }
 
 .page-banner::before {
@@ -2968,6 +3035,14 @@ html[data-theme="dark"] .theme-icon .icon-sun {
   visibility: visible;
   opacity: 1;
   transform: translateY(0);
+}
+
+.back-top:hover,
+.back-top:focus-visible {
+  background: var(--primary-hover);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(8, 47, 41, 0.25);
 }
 html.js .reveal {
   opacity: 0;
