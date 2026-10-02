@@ -3,16 +3,17 @@
   const page = location.pathname.split("/").pop() || "dashboard.html";
   const brandMarkup =
     '<img class="brand-mark" src="../assets/images/favicon.svg" alt=""><span class="brand-text">Fieldnote <span>Learning Centre</span></span>';
-  const links = [
+  const primaryLinks = [
     ["dashboard.html", "OV", "Overview"],
     ["dashboard-timetable.html", "TT", "My Timetable"],
     ["dashboard-attendance.html", "AT", "Attendance"],
     ["dashboard-materials.html", "SM", "Study Materials"],
     ["dashboard-tests.html", "TR", "Tests & Results"],
-    ["dashboard-profile.html", "PS", "Profile & Settings"],
   ];
+  const profileLink = ["dashboard-profile.html", "PS", "Profile & Settings"];
+  const drawerLinks = [...primaryLinks, profileLink];
   const current = (href) => (href === page ? ' aria-current="page"' : "");
-  const navMarkup = links
+  const navMarkup = primaryLinks
     .map(
       ([href, mark, label]) =>
         `<a href="${href}"${current(href)}><span class="dash-nav-mark" aria-hidden="true">${mark}</span>${label}</a>`,
@@ -25,7 +26,7 @@
       "afterbegin",
       `
       <aside class="dashboard-sidebar">
-        <a class="brand" href="dashboard.html">${brandMarkup}</a>
+        <a class="brand" href="index.html" aria-label="Go to Fieldnote Learning Centre public home">${brandMarkup}</a>
         <nav class="dash-nav" aria-label="Student portal navigation">${navMarkup}</nav>
         <div class="sidebar-bottom">
           <div class="sidebar-settings">
@@ -37,14 +38,18 @@
       </aside>
       <div class="dashboard-header">
         <button class="menu-button" type="button" data-drawer-open aria-label="Open portal menu" aria-expanded="false"><span class="hamburger-lines" aria-hidden="true"></span></button>
-        <a class="brand" href="dashboard.html">${brandMarkup}</a>
-        <div class="dashboard-header-actions"><a class="btn btn-secondary" href="login.html">Logout</a></div>
+        <a class="brand" href="index.html" aria-label="Go to Fieldnote Learning Centre public home">${brandMarkup}</a>
+        <div class="dashboard-header-context"><span>Student portal</span><strong>Aarav Shah · Grade 10</strong></div>
+        <div class="dashboard-header-actions">
+          <a class="dashboard-profile-control" href="dashboard-profile.html"${current("dashboard-profile.html")} aria-label="Open Profile & Settings"><span class="dashboard-avatar" aria-hidden="true">AS</span><span>Profile & Settings</span></a>
+          <a class="btn btn-secondary" href="login.html">Logout</a>
+        </div>
       </div>
       <div class="drawer-backdrop" data-drawer-backdrop></div>
       <aside class="drawer" data-drawer aria-hidden="true" aria-label="Student portal menu">
-        <div class="drawer-head"><a class="brand" href="dashboard.html">${brandMarkup}</a><button class="drawer-close" type="button" data-drawer-close aria-label="Close menu">×</button></div>
+        <div class="drawer-head"><a class="brand" href="index.html" aria-label="Go to Fieldnote Learning Centre public home">${brandMarkup}</a><button class="drawer-close" type="button" data-drawer-close aria-label="Close menu">×</button></div>
         <div class="drawer-student"><span aria-hidden="true">AS</span><div><strong>Aarav Shah</strong><small>Grade 10 · Student</small></div></div>
-        <nav class="drawer-nav" aria-label="Portal drawer navigation">${links.map(([href, , label]) => `<a href="${href}"${current(href)}>${label}</a>`).join("")}<a href="login.html">Logout</a></nav>
+        <nav class="drawer-nav" aria-label="Portal drawer navigation">${drawerLinks.map(([href, , label]) => `<a href="${href}"${current(href)}>${label}</a>`).join("")}<a href="login.html">Logout</a></nav>
         <div class="drawer-settings">
           <div><div class="setting-label">Display</div><div class="segmented"><button type="button" data-set-theme="light">Light</button><button type="button" data-set-theme="dark">Dark</button></div></div>
           <div><div class="setting-label">Direction</div><div class="segmented"><button type="button" data-set-direction="ltr">LTR</button><button type="button" data-set-direction="rtl">RTL</button></div></div>

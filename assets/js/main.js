@@ -290,7 +290,7 @@
     // Standalone key visual media and panels
     document
       .querySelectorAll(
-        ".learning-window, .journey-photo, .feedback-photo, .tutor-feature-photo, .map-frame, .cta-panel, .spotlight",
+        ".journey-photo, .feedback-photo, .tutor-feature-photo, .map-frame, .cta-panel, .spotlight",
       )
       .forEach((el, idx) => {
         el.classList.add("reveal");

@@ -26,17 +26,24 @@ html[data-theme="dark"] .dashboard-sidebar {
   background: #07100d;
 }
 
-html[data-theme="dark"] .learning-stage {
-  background:
-    radial-gradient(ellipse at 18% 25%, rgba(20, 106, 88, 0.3), transparent 48%),
-    radial-gradient(ellipse at 80% 16%, rgba(33, 155, 128, 0.18), transparent 48%),
-    radial-gradient(ellipse at 54% 74%, rgba(8, 47, 41, 0.36), transparent 52%), var(--surface);
+html[data-theme="dark"] .home-one-hero {
+  background-color: #031512;
 }
 
 html[data-theme="dark"] .journey-hero {
-  background:
-    radial-gradient(ellipse at 12% 20%, rgba(20, 106, 88, 0.28), transparent 46%),
-    radial-gradient(ellipse at 82% 28%, rgba(33, 155, 128, 0.14), transparent 42%), var(--background);
+  background-color: #041411;
+}
+
+html[data-theme="dark"] .subject-pill {
+  background: #141b18;
+  color: var(--text-primary);
+  border-color: #2d3935;
+}
+
+html[data-theme="dark"] .subject-pill:hover {
+  background: var(--primary);
+  color: #07100d;
+  border-color: var(--primary);
 }
 
 html[data-theme="dark"] .proof-lead,
@@ -87,7 +94,6 @@ html[data-theme="dark"] .tutor-photo,
 html[data-theme="dark"] .tutor-feature-photo,
 html[data-theme="dark"] .spotlight-image,
 html[data-theme="dark"] .feedback-photo,
-html[data-theme="dark"] .journey-photo,
 html[data-theme="dark"] .course-media {
   background-color: var(--surface-alt);
 }
@@ -115,8 +121,9 @@ html[data-theme="dark"] .toast {
   color: var(--text-primary);
 }
 
-/* Theme-Aware Section Adjacency Spacing in Dark Mode */
+/* In dark mode, surface (#141b18) and soft-surface (#111a17) share virtually identical dark surfaces */
 html[data-theme="dark"] .section.surface:has(+ .section.soft-surface),
 html[data-theme="dark"] .section.soft-surface:has(+ .section.surface) {
   padding-block-end: 0;
 }
+

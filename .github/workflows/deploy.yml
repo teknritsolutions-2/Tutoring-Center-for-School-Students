@@ -1,0 +1,115 @@
+name: Deploy Fieldnote to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Build publishing directory
+        run: |
+          mkdir -p _site
+          cp -r pages _site/
+          cp -r assets _site/
+          cat << 'EOF' > _site/index.html
+          <!doctype html>
+          <html lang="en">
+            <head>
+              <meta charset="UTF-8" />
+              <meta http-equiv="refresh" content="0; url=./pages/index.html" />
+              <title>Fieldnote Learning Centre</title>
+              <script>
+                (function() {
+                  var target = './pages/index.html';
+                  var search = window.location.search || '';
+                  var hash = window.location.hash || '';
+                  window.location.replace(target + search + hash);
+                })();
+              </script>
+              <style>
+                body {
+                  margin: 0;
+                  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+                  background-color: #0b1512;
+                  color: #e2e8f0;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  min-height: 100vh;
+                  text-align: center;
+                  padding: 1.5rem;
+                }
+                .card {
+                  background: #11201b;
+                  border: 1px solid #1e3a31;
+                  border-radius: 12px;
+                  padding: 2.5rem 2rem;
+                  max-width: 480px;
+                  box-shadow: 0 12px 32px rgba(0,0,0,0.3);
+                }
+                h1 {
+                  font-size: 1.5rem;
+                  margin: 0 0 0.5rem;
+                  color: #ffffff;
+                }
+                p {
+                  color: #94a3b8;
+                  font-size: 0.95rem;
+                  margin: 0 0 1.5rem;
+                  line-height: 1.5;
+                }
+                a {
+                  display: inline-block;
+                  background-color: #10b981;
+                  color: #ffffff;
+                  text-decoration: none;
+                  font-weight: 600;
+                  padding: 0.75rem 1.5rem;
+                  border-radius: 6px;
+                  transition: background 0.2s ease;
+                }
+                a:hover {
+                  background-color: #059669;
+                }
+              </style>
+            </head>
+            <body>
+              <div class="card">
+                <h1>Fieldnote Learning Centre</h1>
+                <p>Redirecting to the official homepage. If you are not redirected automatically within a few seconds, click the link below.</p>
+                <a href="./pages/index.html">Go to Fieldnote Learning Centre</a>
+              </div>
+            </body>
+          </html>
+          EOF
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

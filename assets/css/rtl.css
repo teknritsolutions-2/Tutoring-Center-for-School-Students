@@ -19,6 +19,10 @@ html[dir="rtl"] .dropdown-menu {
   text-align: start;
 }
 
+html[dir="rtl"] .field select {
+  background-position: left 1rem center;
+}
+
 html[dir="rtl"] .btn::before,
 html[dir="rtl"] .btn-link::after {
   transform-origin: right;
@@ -46,7 +50,4 @@ html[dir="rtl"] .btn-link:hover span {
     transform: rotate(-225deg);
   }
 
-  html[dir="rtl"] .journey-map {
-    margin-inline: 0;
-  }
 }

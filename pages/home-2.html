@@ -17,9 +17,17 @@
     <div data-site-header></div>
     <main id="main-content">
       <section class="journey-hero">
-        <div class="container journey-hero-inner">
-          <div class="journey-heading reveal">
-            <p class="eyebrow">The student journey</p>
+        <div class="journey-hero-backdrop" aria-hidden="true">
+          <img
+            src="../assets/images/student-journey.jpg"
+            alt=""
+            class="journey-hero-img"
+          />
+          <div class="journey-hero-scrim"></div>
+        </div>
+        <div class="container journey-hero-container">
+          <div class="journey-hero-content reveal">
+            <p class="eyebrow">Collaborative learning · Grades 6–12</p>
             <h1>
               Your week.
               <br />
@@ -28,52 +36,26 @@
               Your progress — organized.
             </h1>
             <p class="lede">
-              A connected pathway turns schoolwork, tutoring, practice, and feedback into one understandable week.
+              A connected pathway turns schoolwork, small-group tutoring, practice, and feedback into one understandable weekly rhythm.
             </p>
             <div class="btn-row">
               <a class="btn" href="register.html">
                 Find your batch
                 <span aria-hidden="true">→</span>
               </a>
-              <a class="btn btn-secondary" href="dashboard.html">
-                Preview the portal
+              <a class="btn btn-secondary" href="courses.html">
+                Explore subjects
                 <span aria-hidden="true">→</span>
               </a>
             </div>
-          </div>
-          <div class="journey-stage reveal">
-            <ol class="journey-map" aria-label="Grade to progress learning path">
-              <li>
-                <span>01</span>
-                <small>Grade</small>
-                <b>Grade 10</b>
-              </li>
-              <li>
-                <span>02</span>
-                <small>Subject</small>
-                <b>Mathematics</b>
-              </li>
-              <li>
-                <span>03</span>
-                <small>Batch</small>
-                <b>Evening batch</b>
-              </li>
-              <li>
-                <span>04</span>
-                <small>Test</small>
-                <b>Friday check</b>
-              </li>
-              <li>
-                <span>05</span>
-                <small>Result</small>
-                <b>Progress update</b>
-              </li>
-            </ol>
-            <div class="journey-photo">
-              <img
-                src="../assets/images/student-journey.jpg"
-                alt="A teacher guiding two school students at a classroom desk with every full head visible"
-              />
+            <div class="journey-pathway-pills">
+              <span class="pills-label">Explore by subject:</span>
+              <div class="pills-row">
+                <a href="courses.html" class="subject-pill">Mathematics</a>
+                <a href="courses.html" class="subject-pill">Science</a>
+                <a href="courses.html" class="subject-pill">Physics &amp; Chem</a>
+                <a href="courses.html" class="subject-pill">English Core</a>
+              </div>
             </div>
           </div>
         </div>
