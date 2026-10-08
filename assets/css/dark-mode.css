@@ -8,6 +8,7 @@ html[data-theme="dark"] {
   --background: #0d1210;
   --surface: #141b18;
   --surface-alt: #1a2420;
+  --text: #f6f9f8;
   --text-primary: #f6f9f8;
   --text-secondary: #c2cbc8;
   --text-muted: #919c98;
@@ -195,4 +196,75 @@ html[data-theme="dark"] .section.surface:has(+ .section.soft-surface),
 html[data-theme="dark"] .section.soft-surface:has(+ .section.surface) {
   padding-block-end: 0;
 }
+
+/* Grade Card Media & Level Badge */
+html[data-theme="dark"] .grade-card-media .level-no {
+  background: rgba(18, 30, 27, 0.92);
+  color: var(--primary-strong);
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+/* Home 2 Pathway Roadmap Dark Mode */
+html[data-theme="dark"] .pathway-strip {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+html[data-theme="dark"] .pathway-strip:hover {
+  border-color: color-mix(in srgb, var(--primary) 50%, var(--border));
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
+html[data-theme="dark"] .badge-math {
+  background: rgba(43, 114, 94, 0.28);
+  color: var(--brand-200);
+  border-color: rgba(43, 114, 94, 0.45);
+}
+
+html[data-theme="dark"] .badge-science {
+  background: rgba(2, 132, 199, 0.24);
+  color: #38bdf8;
+  border-color: rgba(56, 189, 248, 0.38);
+}
+
+html[data-theme="dark"] .badge-english {
+  background: rgba(217, 119, 6, 0.24);
+  color: #fbbf24;
+  border-color: rgba(251, 191, 36, 0.38);
+}
+
+html[data-theme="dark"] .flow-step {
+  background: var(--surface-alt);
+  border-color: var(--border);
+}
+
+html[data-theme="dark"] .pathway-strip:hover .flow-step {
+  background: color-mix(in srgb, var(--surface-alt) 80%, var(--surface));
+}
+
+html[data-theme="dark"] .flow-step:hover {
+  border-color: color-mix(in srgb, var(--primary) 55%, var(--border));
+}
+
+html[data-theme="dark"] .flow-step .step-num {
+  background: var(--primary-soft);
+  color: var(--primary-strong);
+}
+
+html[data-theme="dark"] .pathway-strip-header h3,
+html[data-theme="dark"] .flow-step .step-info strong {
+  color: var(--text-primary);
+}
+
+html[data-theme="dark"] .pathway-progress-badge,
+html[data-theme="dark"] .flow-step .step-info small {
+  color: var(--text-secondary);
+}
+
+html[data-theme="dark"] .flow-arrow {
+  color: var(--primary-strong);
+  opacity: 0.75;
+}
+
 

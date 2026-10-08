@@ -821,6 +821,7 @@ html[data-theme="dark"] .theme-icon .icon-sun {
   object-fit: cover;
   object-position: center 25%;
   display: block;
+  filter: brightness(1.12) contrast(1.06);
 }
 
 .home-one-hero-scrim {
@@ -828,15 +829,15 @@ html[data-theme="dark"] .theme-icon .icon-sun {
   inset: 0;
   background:
     radial-gradient(ellipse at 50% 50%, 
-      rgba(4, 26, 22, 0.92) 0%, 
-      rgba(4, 26, 22, 0.85) 45%, 
-      rgba(4, 26, 22, 0.6) 70%, 
-      rgba(4, 26, 22, 0.45) 100%
+      rgba(4, 26, 22, 0.6) 0%, 
+      rgba(4, 26, 22, 0.5) 45%, 
+      rgba(4, 26, 22, 0.35) 75%, 
+      rgba(4, 26, 22, 0.55) 100%
     ),
     linear-gradient(180deg, 
-      rgba(4, 26, 22, 0.7) 0%, 
-      rgba(4, 26, 22, 0.4) 30%, 
-      rgba(4, 26, 22, 0.4) 70%, 
+      rgba(4, 26, 22, 0.68) 0%, 
+      rgba(4, 26, 22, 0.28) 25%, 
+      rgba(4, 26, 22, 0.32) 70%, 
       rgba(4, 26, 22, 0.75) 100%
     );
   pointer-events: none;
@@ -863,6 +864,7 @@ html[data-theme="dark"] .theme-icon .icon-sun {
 .home-hero-copy .eyebrow {
   color: var(--brand-200);
   justify-content: center;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.7);
 }
 
 .home-hero-copy .eyebrow::before {
@@ -876,18 +878,18 @@ html[data-theme="dark"] .theme-icon .icon-sun {
   margin-block-end: 1.25rem;
   letter-spacing: -0.02em;
   text-align: center;
-  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 3px 20px rgba(0, 0, 0, 0.8), 0 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 .home-hero-copy .lede {
-  color: rgba(255, 255, 255, 0.94);
+  color: rgba(255, 255, 255, 0.96);
   font-size: clamp(1.05rem, 1.8vw, 1.22rem);
   line-height: 1.65;
   margin-block-end: 2rem;
   max-width: 720px;
   margin-inline: auto;
   text-align: center;
-  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.35);
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.8), 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 .home-hero-copy .btn-row {
@@ -1008,6 +1010,7 @@ html[data-theme="dark"] .theme-icon .icon-sun {
   object-fit: cover;
   object-position: center 25%;
   display: block;
+  filter: brightness(1.12) contrast(1.06);
 }
 
 .journey-hero-scrim {
@@ -1015,15 +1018,15 @@ html[data-theme="dark"] .theme-icon .icon-sun {
   inset: 0;
   background:
     radial-gradient(ellipse at 50% 50%, 
-      rgba(4, 24, 20, 0.92) 0%, 
-      rgba(4, 24, 20, 0.85) 45%, 
-      rgba(4, 24, 20, 0.6) 70%, 
-      rgba(4, 24, 20, 0.45) 100%
+      rgba(4, 24, 20, 0.6) 0%, 
+      rgba(4, 24, 20, 0.5) 45%, 
+      rgba(4, 24, 20, 0.35) 75%, 
+      rgba(4, 24, 20, 0.55) 100%
     ),
     linear-gradient(180deg, 
-      rgba(4, 24, 20, 0.7) 0%, 
-      rgba(4, 24, 20, 0.4) 30%, 
-      rgba(4, 24, 20, 0.4) 70%, 
+      rgba(4, 24, 20, 0.68) 0%, 
+      rgba(4, 24, 20, 0.28) 25%, 
+      rgba(4, 24, 20, 0.32) 70%, 
       rgba(4, 24, 20, 0.75) 100%
     );
   pointer-events: none;
@@ -1050,6 +1053,7 @@ html[data-theme="dark"] .theme-icon .icon-sun {
 .journey-hero-content .eyebrow {
   color: var(--brand-200);
   justify-content: center;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.7);
 }
 
 .journey-hero-content .eyebrow::before {
@@ -1063,18 +1067,18 @@ html[data-theme="dark"] .theme-icon .icon-sun {
   margin-block-end: 1.25rem;
   letter-spacing: -0.02em;
   text-align: center;
-  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 3px 20px rgba(0, 0, 0, 0.8), 0 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 .journey-hero-content .lede {
-  color: rgba(255, 255, 255, 0.94);
+  color: rgba(255, 255, 255, 0.96);
   font-size: clamp(1.05rem, 1.8vw, 1.22rem);
   line-height: 1.65;
   margin-block-end: 2rem;
   max-width: 720px;
   margin-inline: auto;
   text-align: center;
-  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.35);
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.8), 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 .journey-hero-content .btn-row {
@@ -1355,6 +1359,247 @@ html[data-theme="dark"] .theme-icon .icon-sun {
   color: var(--primary-strong);
   font-size: 0.78rem;
   font-weight: 850;
+}
+
+.grade-card.has-media {
+  padding: 0;
+  overflow: hidden;
+}
+
+.grade-card-media {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  border-block-end: 1px solid var(--border);
+  background: var(--surface-alt);
+}
+
+.grade-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 420ms cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.grade-card:hover .grade-card-media img {
+  transform: scale(1.05);
+}
+
+.grade-card-media .level-no {
+  position: absolute;
+  top: 0.9rem;
+  left: 0.9rem;
+  margin-block-end: 0;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  z-index: 2;
+}
+
+.grade-card-body {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+  flex-direction: column;
+  padding: clamp(1.2rem, 3vw, 1.5rem);
+}
+
+/* ==========================================================================
+   Home 2 Distinct Pathway Roadmap Layout
+   ========================================================================== */
+
+.pathway-track-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-block-start: 0.5rem;
+}
+
+.pathway-strip {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  align-items: center;
+  gap: 2rem;
+  padding: clamp(1.25rem, 2.5vw, 1.6rem) clamp(1.35rem, 2.8vw, 2rem);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: var(--shadow-soft);
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.pathway-strip:hover {
+  transform: translateY(-3px);
+  border-color: color-mix(in srgb, var(--primary) 42%, var(--border));
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.07);
+}
+
+.pathway-strip-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  min-width: 0;
+}
+
+.pathway-badge-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.pathway-subject-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 0.28rem 0.68rem;
+  border-radius: 999px;
+  letter-spacing: 0.02em;
+}
+
+.badge-math {
+  background: color-mix(in srgb, var(--primary) 14%, var(--surface));
+  color: var(--primary-strong);
+  border: 1px solid color-mix(in srgb, var(--primary) 35%, var(--border));
+}
+
+.badge-science {
+  background: color-mix(in srgb, #0284c7 14%, var(--surface));
+  color: #0369a1;
+  border: 1px solid color-mix(in srgb, #0284c7 35%, var(--border));
+}
+
+.badge-english {
+  background: color-mix(in srgb, #d97706 14%, var(--surface));
+  color: #b45309;
+  border: 1px solid color-mix(in srgb, #d97706 35%, var(--border));
+}
+
+.pathway-progress-badge {
+  font-size: 0.74rem;
+  font-weight: 750;
+  color: var(--text-muted);
+}
+
+.pathway-strip-header h3 {
+  font-size: clamp(1.15rem, 1.8vw, 1.35rem);
+  font-weight: 750;
+  margin: 0;
+  color: var(--text);
+  line-height: 1.3;
+}
+
+.pathway-strip-header .progress {
+  margin-block-start: 0.2rem;
+  width: 100%;
+}
+
+.pathway-steps-flow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  min-width: 0;
+}
+
+.flow-step {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  flex: 1;
+  min-width: 0;
+  padding: 0.75rem 0.85rem;
+  border-radius: 12px;
+  background: var(--surface-alt);
+  border: 1px solid color-mix(in srgb, var(--border) 80%, transparent);
+  transition: background 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+.pathway-strip:hover .flow-step {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+.flow-step:hover {
+  border-color: color-mix(in srgb, var(--primary) 45%, var(--border));
+  transform: translateY(-2px);
+}
+
+.flow-step .step-num {
+  display: inline-grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: var(--primary-soft);
+  color: var(--primary-strong);
+  font-size: 0.75rem;
+  font-weight: 850;
+  flex-shrink: 0;
+}
+
+.flow-step .step-info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  line-height: 1.25;
+}
+
+.flow-step .step-info strong {
+  font-size: 0.84rem;
+  font-weight: 750;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.flow-step .step-info small {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-block-start: 2px;
+}
+
+.flow-arrow {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 1rem;
+  opacity: 0.55;
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .pathway-strip {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .pathway-steps-flow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  .flow-arrow {
+    display: none;
+  }
+}
+
+@media (max-width: 580px) {
+  .pathway-steps-flow {
+    grid-template-columns: 1fr;
+  }
 }
 
 .pathway {
@@ -2180,13 +2425,15 @@ html[data-theme="dark"] .theme-icon .icon-sun {
 .page-banner {
   position: relative;
   isolation: isolate;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: min(calc(100% - (var(--pad) * 2)), var(--max));
   min-width: 0;
-  min-height: 320px;
+  min-height: clamp(340px, 32vw, 420px);
   overflow: hidden;
-  margin: clamp(1.5rem, 4vw, 2.4rem) auto 0;
-  place-items: center;
+  margin: clamp(1.5rem, 4vw, 2.4rem) auto;
   border: 1px solid color-mix(in srgb, var(--brand-300) 28%, var(--border));
   border-radius: clamp(20px, 2.6vw, 30px);
   background: var(--brand-900);
@@ -2194,7 +2441,7 @@ html[data-theme="dark"] .theme-icon .icon-sun {
 }
 
 .about-banner {
-  min-height: clamp(360px, 32vw, 440px);
+  min-height: clamp(360px, 34vw, 450px);
 }
 
 .page-banner::before {
@@ -2226,7 +2473,8 @@ html[data-theme="dark"] .theme-icon .icon-sun {
   width: min(100%, 840px);
   max-width: 840px;
   margin-inline: auto;
-  padding: clamp(2rem, 5vw, 4rem);
+  padding-block: clamp(3rem, 6vw, 4.5rem);
+  padding-inline: clamp(1.5rem, 4vw, 3rem);
   text-align: center;
 }
 
@@ -3744,7 +3992,8 @@ html.js .reveal.is-visible {
   }
 
   .page-banner {
-    min-height: clamp(360px, 30vw, 410px);
+    min-height: clamp(360px, 30vw, 420px);
+    margin: clamp(1.8rem, 4vw, 2.5rem) auto;
   }
 
   .menu-button {
@@ -4128,6 +4377,11 @@ html.js .reveal.is-visible {
     transform: none;
   }
 
+  .pathway-strip {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
   .matrix-table.responsive thead {
     display: none;
   }
@@ -4194,18 +4448,18 @@ html.js .reveal.is-visible {
   .home-one-hero-scrim {
     background:
       linear-gradient(180deg, 
-        rgba(4, 26, 22, 0.9) 0%, 
-        rgba(4, 26, 22, 0.96) 50%, 
-        rgba(4, 26, 22, 0.98) 100%
+        rgba(4, 26, 22, 0.72) 0%, 
+        rgba(4, 26, 22, 0.52) 40%, 
+        rgba(4, 26, 22, 0.78) 100%
       );
   }
 
   .journey-hero-scrim {
     background:
       linear-gradient(180deg, 
-        rgba(4, 24, 20, 0.9) 0%, 
-        rgba(4, 24, 20, 0.96) 50%, 
-        rgba(4, 24, 20, 0.98) 100%
+        rgba(4, 24, 20, 0.72) 0%, 
+        rgba(4, 24, 20, 0.52) 40%, 
+        rgba(4, 24, 20, 0.78) 100%
       );
   }
 
@@ -4229,7 +4483,12 @@ html.js .reveal.is-visible {
   }
 
   .page-banner {
-    min-height: clamp(250px, 68vw, 300px);
+    min-height: clamp(280px, 68vw, 340px);
+    margin: clamp(1.2rem, 3.5vw, 1.8rem) auto;
+  }
+
+  .page-banner .banner-copy {
+    padding-block: clamp(2.2rem, 5vw, 3rem);
   }
 
   .page-banner::before {
@@ -4248,12 +4507,26 @@ html.js .reveal.is-visible {
     min-height: 220px;
     aspect-ratio: 16 / 10;
   }
+
+  .pathway-steps-flow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.65rem;
+  }
+
+  .flow-arrow {
+    display: none;
+  }
 }
 
 @media (max-width: 639px) {
   :root {
     --pad: 1rem;
     --section: 4.25rem;
+  }
+
+  .pathway-steps-flow {
+    grid-template-columns: 1fr;
   }
 
   .btn-row .btn {
