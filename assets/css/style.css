@@ -3235,10 +3235,51 @@ html[data-theme="dark"] .theme-icon .icon-sun {
   color: var(--brand-200);
 }
 
-.footer-contact p {
-  margin: 0.15rem 0 0.45rem;
+.footer-contact-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.footer-contact .footer-contact-item {
+  display: grid;
+  width: 100%;
+  min-height: 0;
+  grid-template-columns: 30px minmax(0, 1fr);
+  align-items: start;
+  gap: 0.65rem;
+}
+
+.footer-contact-icon {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  border: 1px solid rgba(111, 208, 182, 0.26);
+  border-radius: 9px;
+  background: rgba(111, 208, 182, 0.09);
+  color: var(--brand-200);
+}
+
+.footer-contact-icon svg {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.footer-contact .footer-contact-copy {
+  margin: 0;
+  padding-block-start: 0.2rem;
   font-size: 0.88rem;
   line-height: 1.6;
+}
+
+.footer-contact a.footer-contact-item:hover .footer-contact-icon {
+  border-color: var(--brand-200);
+  background: rgba(111, 208, 182, 0.16);
 }
 
 .footer-bottom {

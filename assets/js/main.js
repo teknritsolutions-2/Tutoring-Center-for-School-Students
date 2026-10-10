@@ -15,6 +15,13 @@
       <svg class="icon-sun" viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="12" r="3.6"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"/></svg>
     </span>`;
 
+  const footerContactIcons = {
+    phone: `<svg viewBox="0 0 24 24" focusable="false"><path d="M7.1 3.5 9 7.7 6.8 9.3a15.2 15.2 0 0 0 7.9 7.9l1.6-2.2 4.2 1.9v2.4c0 .7-.5 1.3-1.2 1.4C10.7 21.6 2.4 13.3 3.3 4.7c.1-.7.7-1.2 1.4-1.2h2.4Z"/></svg>`,
+    email: `<svg viewBox="0 0 24 24" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>`,
+    location: `<svg viewBox="0 0 24 24" focusable="false"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>`,
+    hours: `<svg viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>`,
+  };
+
   const publicLinks = [
     ["about.html", "About"],
     ["courses.html", "Courses"],
@@ -78,7 +85,27 @@
             <div class="footer-col"><h3>Explore</h3><a href="index.html">Home Page 1</a><a href="home-2.html">Home Page 2</a><a href="about.html">About</a><a href="results.html">Results</a><a href="testimonials.html">Testimonials</a><a href="contact.html">Contact</a></div>
             <div class="footer-col"><h3>Academics</h3><a href="courses.html">Courses</a><a href="grade-6-8.html">Grade 6–8</a><a href="grade-9-10.html">Grade 9–10</a><a href="grade-11-12.html">Grade 11–12</a><a href="tutors.html">Tutors</a><a href="fees.html">Fees</a><a href="faq.html">FAQ</a></div>
             <div class="footer-col"><h3>Student Portal</h3><a href="login.html">Student Login</a><a href="dashboard.html">Dashboard</a><a href="dashboard-timetable.html">Timetable</a><a href="dashboard-attendance.html">Attendance</a><a href="dashboard-materials.html">Study Materials</a><a href="dashboard-tests.html">Tests &amp; Results</a></div>
-            <div class="footer-col footer-contact"><h3>Contact</h3><a href="tel:+918012345678">+91 80 1234 5678</a><a href="mailto:hello@fieldnotelearning.example">hello@fieldnotelearning.example</a><p>42, 6th Main Road,<br>Indiranagar, Bengaluru 560038</p><p>Mon–Fri 2:00–8:00 PM<br>Sat 9:00 AM–5:00 PM</p></div>
+            <div class="footer-col footer-contact">
+              <h3>Contact</h3>
+              <div class="footer-contact-list">
+                <a class="footer-contact-item" href="tel:+918012345678">
+                  <span class="footer-contact-icon" aria-hidden="true">${footerContactIcons.phone}</span>
+                  <span class="footer-contact-copy">+91 80 1234 5678</span>
+                </a>
+                <a class="footer-contact-item" href="mailto:hello@fieldnotelearning.example">
+                  <span class="footer-contact-icon" aria-hidden="true">${footerContactIcons.email}</span>
+                  <span class="footer-contact-copy">hello@fieldnotelearning.example</span>
+                </a>
+                <div class="footer-contact-item">
+                  <span class="footer-contact-icon" aria-hidden="true">${footerContactIcons.location}</span>
+                  <p class="footer-contact-copy">42, 6th Main Road,<br>Indiranagar, Bengaluru 560038</p>
+                </div>
+                <div class="footer-contact-item">
+                  <span class="footer-contact-icon" aria-hidden="true">${footerContactIcons.hours}</span>
+                  <p class="footer-contact-copy">Mon–Fri 2:00–8:00 PM<br>Sat 9:00 AM–5:00 PM</p>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="container footer-bottom"><span>© 2026 Fieldnote Learning Centre · Bengaluru</span><span class="footer-legal"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a></span></div>
         </footer>
