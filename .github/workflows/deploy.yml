@@ -33,6 +33,12 @@ jobs:
           mkdir -p _site
           cp -r pages _site/
           cp -r assets _site/
+          find _site/pages -type f -name '*.html' -exec sed -i \
+            -e "s|../assets/css/style.css|../assets/css/style.css?v=${GITHUB_SHA}|g" \
+            -e "s|../assets/css/dark-mode.css|../assets/css/dark-mode.css?v=${GITHUB_SHA}|g" \
+            -e "s|../assets/css/rtl.css|../assets/css/rtl.css?v=${GITHUB_SHA}|g" \
+            -e "s|../assets/js/main.js|../assets/js/main.js?v=${GITHUB_SHA}|g" \
+            -e "s|../assets/js/dashboard.js|../assets/js/dashboard.js?v=${GITHUB_SHA}|g" {} +
           cat << 'EOF' > _site/index.html
           <!doctype html>
           <html lang="en">
