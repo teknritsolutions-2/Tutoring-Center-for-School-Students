@@ -3277,7 +3277,7 @@ html[data-theme="dark"] .theme-icon .icon-sun {
   line-height: 1.6;
 }
 
-.footer-contact a.footer-contact-item:hover .footer-contact-icon {
+.footer-contact-item:hover .footer-contact-icon {
   border-color: var(--brand-200);
   background: rgba(111, 208, 182, 0.16);
 }
